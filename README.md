@@ -1,7 +1,7 @@
-#Project 4
+##Project 4
 This Readme file contains commands for succesfully executing the Project
 
-#STEP1
+##STEP1
 ##Docker login
 docker login
 
@@ -34,6 +34,8 @@ docker push new-repo:tagname
 3. Add the docker token and GitHub encrypted secrets from the project directory Goto settings > secret > Actions > click New repository secret 
 4. create the techtrends-dockerhub.yml in the .github/workflows/ Might be created automatically when creating the github action. 
 5. Goto Github Actions and click on the create a new workflow yourself button
+
+![Docker_secret](https://github.com/Uchejen/techtrend_project/blob/main/screenshots/Docker_secret.PNG?raw=true)
 
 touch namespace.yaml
 touch deploy.yaml
