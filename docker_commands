@@ -1,0 +1,104 @@
+## CD into the techtrends directory 
+
+## Docker Login
+
+docker login
+
+## Commands used to build the application
+
+docker build -t techtrends .
+
+
+## commands to test and run the application 
+
+docker run -dp 7111:3111 techtrends
+
+
+## Docker run output 
+1de025d17851750c84483760e34ea370051600685710441710b85f68cb0128ea
+
+
+## Docker command to retrieve the logs 
+
+docker logs 1de025d17851750c84483760e34ea370051600685710441710b85f68cb0128ea
+
+## TechTrends logs
+
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:16:29] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:16:29] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:16:29] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:16:29] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:16:29] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:16:29] "GET /favicon.ico HTTP/1.1" 404 -
+DEBUG:app:Fri Oct 28 14:17:10 2022, Test debug message
+DEBUG:app:Fri Oct 28 14:17:10 2022, Test debug message
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:17:10] "GET /healthz HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:17:10] "GET /healthz HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:17:32] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:17:32] "GET /metrics HTTP/1.1" 200 -
+DEBUG:app:Fri Oct 28 14:17:46 2022, Post "Kubernetes v1.20 Release Notes" was retrieved.
+DEBUG:app:Fri Oct 28 14:17:46 2022, Post "Kubernetes v1.20 Release Notes" was retrieved.
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:17:46] "GET /3 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:17:46] "GET /3 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:17:46] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:17:46] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:17:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:17:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:17:48] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:17:48] "GET /static/css/main.css HTTP/1.1" 304 -
+DEBUG:app:Fri Oct 28 14:17:54 2022, About page retrieved.
+DEBUG:app:Fri Oct 28 14:17:54 2022, About page retrieved.
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:17:54] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:17:54] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:17:54] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:17:54] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:17:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:17:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:17:56] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:17:56] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:18:02] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:18:02] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:18:02] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:18:02] "GET /static/css/main.css HTTP/1.1" 304 -
+DEBUG:app:Fri Oct 28 14:18:10 2022, Post "new" created.
+DEBUG:app:Fri Oct 28 14:18:10 2022, Post "new" created.
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:18:10] "POST /create HTTP/1.1" 302 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:18:10] "POST /create HTTP/1.1" 302 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:18:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:18:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:18:10] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:18:10] "GET /static/css/main.css HTTP/1.1" 304 -
+DEBUG:app:Fri Oct 28 14:18:13 2022, Post "new" was retrieved.
+DEBUG:app:Fri Oct 28 14:18:13 2022, Post "new" was retrieved.
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:18:13] "GET /7 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:18:13] "GET /7 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:18:13] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:18:13] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:18:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:18:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:18:15] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:172.17.0.1 - - [28/Oct/2022 14:18:15] "GET /static/css/main.css HTTP/1.1" 304 -
+
+
+## DOcker command to tag the image 
+
+docker tag techtrends uchejen/techtrends:v1.0.0
+
+## Docker command to push the images to dockerhub 
+
+docker push uchejen/techtrends:v1.0.0
+
+docker tag local-image:tagname new-repo:tagname
+
+docker push new-repo:tagname

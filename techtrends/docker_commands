@@ -1,0 +1,38 @@
+## CD into the techtrends directory 
+
+## Docker Login
+
+docker login
+
+## Commands used to build the application
+
+docker build -t techtrends .
+
+
+## commands to test and run the application 
+
+docker run -dp 7111:3111 techtrends
+
+
+## Docker run output 
+1de025d17851750c84483760e34ea370051600685710441710b85f68cb0128ea
+
+
+## Docker command to retrieve the logs 
+
+docker logs 1de025d17851750c84483760e34ea370051600685710441710b85f68cb0128ea
+
+## TechTrends logs
+
+ 
+## DOcker command to tag the image 
+
+docker tag techtrends uchejen/techtrends:v1.0.0
+
+## Docker command to push the images to dockerhub 
+
+docker push uchejen/techtrends:v1.0.0
+
+docker tag local-image:tagname new-repo:tagname
+
+docker push new-repo:tagname
